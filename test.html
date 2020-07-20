@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float test</title>
+    <style type="text/css">
+
+    body {
+        margin: 1.5em;
+        line-height: 1.5em;
+        color: black;
+
+    }
+
+    .fontFamily:not(#parent, #yellowChild){
+        font-family: Arial;
+        color: white;
+    }
+
+    div:not(#parent, #yellowChild) {
+        border-style: solid;
+        border-color: black ;
+        border-radius: 3px;
+        border-bottom: 0px;
+        height: 67px;
+    }
+
+    #parent {
+        padding: 12px;
+        background-color: beige;
+        border: solid black 3px;
+
+    }
+
+    #blueChild {
+        padding: 10px;
+        background-color: blue;
+    }
+
+    #yellowChild {
+        float: left;
+        padding: 10px;
+        background-color: yellow;
+        border: solid black 3px;
+        height: 67px;
+    }
+
+    #redChild {
+        float: right;
+        padding: 10px;
+        background-color: red;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div id="parent" class="fontFamily">
+        <h1>Parent</h1>
+        <div id="blueChild" class="fontFamily">
+            First child
+        </div>
+        <div id="redChild" class="fontFamily">
+            Second child
+        </div>
+        <div id="yellowChild" class="fontFamily">
+            Third child
+        </div>
+    </div>
+    
+</body>
+</html>
